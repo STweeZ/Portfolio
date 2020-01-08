@@ -1,19 +1,26 @@
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
-
 html{
 	scroll-behavior: smooth;
 	background: url("img/letter.jpg") center fixed;
-}
-
-body{
-	margin: 0px;
-	padding: 0px;
 }
 
 header,main,body,html{
 	width: 100%;
 	height: 100%;
 	color: #FFFFFF;
+	font-family: 'Public Sans', sans-serif;
+}
+
+.map-container-5{
+overflow:hidden;
+padding-bottom:56.25%;
+position:relative;
+}
+.map-container-5 iframe{
+left:0;
+top:0;
+height:100%;
+width:100%;
+position:absolute;
 }
 
 header{
@@ -42,6 +49,14 @@ h1{
 	border-bottom: 2px solid #fff;
 	border-right: 2px solid #fff;
 	animation: animate 1.5s linear infinite;
+}
+
+.img-card{
+	filter: grayscale(100%);
+	-webkit-filter: grayscale(100%);
+	-moz-filter: grayscale(100%);
+	-ms-filter: grayscale(100%);
+	-o-filter: grayscale(100%);
 }
 
 .scrolldown span:nth-child(1){
@@ -119,9 +134,14 @@ h1{
 
 .content{
 	display: table-cell;
-	text-align: center;
 	vertical-align: middle;
 	position: relative;
+	padding: 5rem;
+}
+
+.title{
+	font-family: 'Julius Sans One', sans-serif;
+	font-size: 1.5em;
 }
 
 .progress{
@@ -129,17 +149,25 @@ h1{
 }
 
 #presentation{
-	width: 100%;
-	height: 100%;
 	font-size: 1.5em;
-	font-family: 'Julius Sans One', sans-serif;
-	text-align: center;
 	background-color: #111111;
+	padding: 5rem;
+	text-align: center;
+}
+
+#presentation .btn{
+  background: linear-gradient(45deg,rgba(207,134,69,0.65)0%, rgba(166,94,30,0.65)51%,rgba(207,134,69,0.65)100%);
+  border-radius:4px;
+  padding:20px 48px;
+  color:#FFFFFF;
+  text-decoration: none;
+  font-size: 20px 'Montserrat', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: : 0px 2px 4px rgba(0,0,0,0.6);
 }
 
 #competences{
-	width: 100%;
-	height: 100%;
 	font-size: 1.5em;
 	background: url("img/books.jpg") no-repeat center center fixed;
   background-size: cover;
@@ -147,38 +175,56 @@ h1{
 	color: #FFFFFF;
 }
 
+#fr{
+	padding: 2rem;
+	height: 10em;
+}
+
+#en{
+	padding: 2rem;
+	height: 10em;
+}
+
 #parcours{
-	width: 100%;
-	height: 100%;
 	font-size: 1.5em;
-	font-family: 'Julius Sans One', sans-serif;
 	background-color: #222111;
 }
 
 #exp{
-	width: 100%;
-	height: 100%;
 	font-size: 1.5em;
-	font-family: 'Julius Sans One', sans-serif;
 	background-color: #111222;
 }
 
 #projets{
-	width: 100%;
-	height: 100%;
 	font-size: 1.5em;
 	background: url("img/code.jpg") no-repeat center center fixed;
   background-size: cover;
-	font-family: 'Julius Sans One', sans-serif;
 	color: #FFFFFF;
+	text-align: center;
+}
+
+
+.divCarousel {
+	height: 75%;
+	.carousel-inner {
+		height: 75%;
+		.carousel-item {
+			height: 75%;
+		}
+	}
+	.carousel-item img {
+		height: 75%;
+	}
+}
+
+.color-blanc{
+	color: #FFFFFF;
+	text-shadow: 0.5px 0.6px 3px black;
 }
 
 #GitHub{
-	color: white;
-}
-
-#GitHub:hover{
-	text-decoration: none;
+	background: linear-gradient(45deg,rgba(225,215,213,0.65)0%, rgba(134,134,134,0.65)51%,rgba(225,215,213,0.65)100%);
+	height: 10rem;
 }
 
 #contact{
@@ -188,6 +234,14 @@ h1{
   background-size: cover;
 	font-family: 'Julius Sans One', sans-serif;
 	color: #000000;
+}
+
+#loisirs{
+	font-size: 1.5em;
+	background: url("img/loisirs.png") no-repeat center center fixed;
+  background-size: cover;
+	color: #FFFFFF;
+	text-align: center;
 }
 
 .bck{
